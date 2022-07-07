@@ -1,0 +1,144 @@
+html {
+    background-color: #3B3F45;
+    border: 25px solid white;
+    min-height: 100%;
+}
+
+* {
+    transition: all .1s ease-in;
+}
+
+header {
+    background: #4A4F56;
+    color: #FF8984;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 20px;
+}
+
+main {
+    width: 534px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+li:nth-child(odd) {
+    background: #88839E;
+}
+
+li:nth-child(even) {
+    background: #7A7593;
+}
+
+label {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+li:hover {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: #625E77;
+    cursor: pointer;
+}
+
+.after-before::after {
+    content: ")";
+}
+
+.after-before::before {
+    content: "(";
+}
+
+span {
+    font-size: 14px;
+    vertical-align: text-top;
+}
+
+.input-text {
+    margin-left: 8%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+input:checked + div {
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+
+li:active {
+    background-color: #FF8984;
+}
+
+.checkbox-input {
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+}
+
+li {
+    position: relative;
+}
+
+.checkbox-label::before {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 19px;
+    top: 30%;
+    left: 2%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 1;
+}
+
+.checkbox-input:checked {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    top: 35%;
+    left: 1.8%;
+    background: url("/Vector.svg") no-repeat;
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+}
+
+button {
+    height: 45px;
+    width: 534px;
+    margin: 45px auto;
+    display: block;
+    background: #4A4F56;
+    color: #FF8984;
+    cursor: pointer;
+    padding: 0px;
+    border: 0px;
+}
